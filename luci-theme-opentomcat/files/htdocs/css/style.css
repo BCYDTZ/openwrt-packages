@@ -1,4 +1,4 @@
-/**
+﻿/**
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -165,6 +165,7 @@ input,
     vertical-align: baseline;
     border-radius: 3px;
 }
+
 
 select:not([multiple="multiple"]):focus,
 input:focus {
@@ -501,17 +502,14 @@ header > .container > a[class="brand"]:after {
     -webkit-font-smoothing: antialiased;
 }
 
-
 .main > .main-left > .nav > .slide > a[data-title="Status"]:before {
     content: "\e026";
-   color: #5e72e4!important;
-  
+   color: #5e72e4!important; 
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Status"]:before {
     content: "\e026";
-   color: #5e72e4!important;
-  
+   color: #5e72e4!important;  
 }
 
 .main > .main-left > .nav > .slide > a[data-title="System"]:before {
@@ -523,6 +521,7 @@ color: #FF00FF!important;
     content: "\e00e";
 color: #8965e0!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="VPN"]:before {
     content: "\e029";
  color: #5F9EA0!important;
@@ -531,6 +530,11 @@ color: #8965e0!important;
 .main > .main-left > .nav > .slide > a[data-title="Services"]:before {
     content: "\e01b";
  color: #11cdef!important;
+}
+
+.main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
+    content: "\e02c";
+ color: #00b2ee!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="NAS"]:before {
@@ -542,18 +546,17 @@ color: #8965e0!important;
     content: "\e024";
   color: 	#3CB371!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="Statistics"]:before {
     content: "\e023";
   color: #1E90FF!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="QOS"]:before {
     content: "\e00a";
     color: #f3a4b5!important;
 }
-.main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
-    content: "\e025";
-    color: #66CC00!important;
-}
+
 .main > .main-left > .nav > .slide > a[data-title="Bandwidth Monitor"]:before {
     content: "\e00f";
 color: #2dce89!important;
@@ -564,6 +567,7 @@ color: #2dce89!important;
     line-height:40px;
  color: #9400D3!important;
 }
+
 .main > .main-left > .nav > li > a[data-title="Logout"]:before {
     content: "\e005";
     display: inline-block;
@@ -650,7 +654,7 @@ color: #FF99CC;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active {
-   
+    background-color: #154360;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
@@ -673,22 +677,21 @@ color: #FF99CC;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active > a {
- /* border-left: #ffffff 15px solid; */
-  color: #FFFF00;
-
+ /* border-left: #ffffff 10px solid; */
+  color: #FF9933;
 
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li:hover {
        /* border-left: #ffffff 3px solid; */
 	color: white;
-	background: #3366CC;
+	background: #9933CC;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active:hover {
    /* border-left: #ffffff 3px solid; */
 	color: white;
-	background-color: #003366;
+	background-color: #8A2BE2;
 	cursor: hand;
 }
 
@@ -850,7 +853,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #44cef6!important;
+    background-color: #CCFFFF!important;
 }
 
 /* fix multiple table */
@@ -878,23 +881,28 @@ td > table > tbody > tr > td,
 /* button style */
 
 .cbi-button {
-cursor: pointer;
+	-webkit-appearance: none;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.87);
+	background-color: #F0F0F0;
+	transition: all 0.2s ease-in-out;
 	display: inline-block;
-	background-color: #e6e6e6;
-	background-repeat: no-repeat;	
-	padding: 5px 14px 6px;
-	color: #333;
+	padding: 0 0.8rem;
+	border: none;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	background-image: none;
+	text-align: center;
+	vertical-align: middle;
 	white-space: nowrap;
-	font-size: 14px;
-	line-height: normal;
-	border: 1px solid #ccc;
-	border-bottom-color: #bbb;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 0.8rem;
+	width: auto !important;
 }
 
 .cbi-button:hover,
