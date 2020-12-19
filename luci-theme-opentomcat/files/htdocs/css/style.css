@@ -146,7 +146,7 @@ select {
     background-image: none;
     border: 1px solid #ccc;
 }
-
+d
 select,
 input,
 .cbi-dropdown {
@@ -533,8 +533,8 @@ color: #8965e0!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
-    content: "\e02c";
- color: #00b2ee!important;
+    content: "\e025";
+    color: #66CC00!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="NAS"]:before {
